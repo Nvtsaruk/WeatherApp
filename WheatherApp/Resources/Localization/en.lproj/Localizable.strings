@@ -1,0 +1,14 @@
+//Weather screen
+"maxTemp" = "Max";
+"minTemp" = "min";
+"tempSign" = "°F";
+"weeklyLabelText" = "FORECAST FOR THE WEEK";
+"hourlyLabelText" = "HOURLY FORECAST";
+"noInternet" = "No internet connection";
+"lastUpdate"= "Last update";
+//Location screen
+"weather" = "Weather";
+"weatherSearchText" = "Enter city name";
+"currentPlace" = "Current";
+"add" = "Add";
+"cancel" = "Cancel";

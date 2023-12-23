@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "scatteredClouds.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

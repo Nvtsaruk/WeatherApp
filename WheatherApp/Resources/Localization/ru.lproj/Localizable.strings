@@ -1,0 +1,14 @@
+//Weather screen
+"maxTemp" = "Макс";
+"minTemp" = "мин";
+"tempSign" = "°C";
+"weeklyLabelText" = "ПРОГНОЗ НА НЕДЕЛЮ";
+"hourlyLabelText" = "ПОЧАСОВОЙ ПРОГНОЗ";
+"noInternet" = "Отсутсвует соединие с сетью";
+"lastUpdate"= "Последнее обновлени";
+//Location screen
+"weather" = "Погода";
+"weatherSearchText" = "Введите название города";
+"currentPlace" = "Текущее место";
+"add" = "Добавить";
+"cancel" = "Отмена";
