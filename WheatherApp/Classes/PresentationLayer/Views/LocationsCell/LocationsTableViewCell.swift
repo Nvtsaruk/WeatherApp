@@ -4,7 +4,7 @@ final class LocationsTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var locationView: UIView!
     @IBOutlet private weak var placeLabel: UILabel!
-    @IBOutlet private weak var backgroundImage: UIImageView!
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet private weak var skyLabel: UILabel!
     @IBOutlet private weak var tempLabel: UILabel!
     @IBOutlet private weak var minMaxTempLabel: UILabel!

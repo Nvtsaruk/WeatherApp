@@ -36,6 +36,7 @@ final class MainPageViewController: UIPageViewController, UIPageViewControllerDa
             let gpsViewModel = WeatherViewModel()
             gpsViewModel.location = "Current"
             gpsViewModel.locale = viewModel?.locale
+            gpsPage.heroSetId = numLoc
             gpsPage.viewModel = gpsViewModel
             self.pages.append(gpsPage)
         } else {
@@ -47,6 +48,7 @@ final class MainPageViewController: UIPageViewController, UIPageViewControllerDa
                     gpsViewModel.location = "Current"
                     gpsViewModel.locale = viewModel?.locale
                     gpsPage.viewModel = gpsViewModel
+                    gpsPage.heroSetId = i
                     self.pages.append(gpsPage)
                 } else {
                     let page = WeatherViewController.instantiate()
@@ -55,6 +57,7 @@ final class MainPageViewController: UIPageViewController, UIPageViewControllerDa
                     pageModel.coords = Coords(lon: v.lon, lat: v.lat)
                     pageModel.location = v.locationID ?? ""
                     page.viewModel = pageModel
+                    page.heroSetId = i
                     self.pages.append(page)
                 }
             }

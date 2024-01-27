@@ -1,8 +1,11 @@
 import UIKit
+import Hero
 final class MainCoordinator: Coordinator {
     
     let navigationController = UINavigationController()
     let locale = LocaleEnum(rawValue: Locale.current.language.languageCode?.identifier ?? "")
+    
+    
     
     func start() {
         let MainPageController = MainPageViewController.instantiate()
@@ -10,6 +13,8 @@ final class MainCoordinator: Coordinator {
         model.coordinator = self
         model.locale = locale
         MainPageController.viewModel = model
+        navigationController.isHeroEnabled = true
+        navigationController.heroNavigationAnimationType = .fade
         navigationController.pushViewController(MainPageController, animated: true)
     }
     func showLocations(viewController: UIViewController) {
@@ -19,6 +24,8 @@ final class MainCoordinator: Coordinator {
         locationsViewModel.coordinator = self
         locationsViewModel.locale = locale
         locationsPage.viewModel = locationsViewModel
+        navigationController.isHeroEnabled = true
+        navigationController.heroNavigationAnimationType = .fade
         navigationController.pushViewController(locationsPage, animated: true)
     }
 

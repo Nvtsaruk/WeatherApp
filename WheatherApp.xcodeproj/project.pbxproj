@@ -58,6 +58,7 @@
 		CCD719FC2B289D2B0032A395 /* WeeklyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD719FA2B289D2B0032A395 /* WeeklyTableViewCell.xib */; };
 		CCD719FF2B28AB900032A395 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD719FD2B28AB900032A395 /* DayTableViewCell.swift */; };
 		CCD71A002B28AB900032A395 /* DayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD719FE2B28AB900032A395 /* DayTableViewCell.xib */; };
+		CCE8E2302B652F1B0013AEBD /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = CCE8E22F2B652F1B0013AEBD /* Hero */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 			files = (
 				CC2984ED2B2A0F6F00A04BFE /* RealmSwift in Frameworks */,
 				CC2984EB2B2A0F6F00A04BFE /* Realm in Frameworks */,
+				CCE8E2302B652F1B0013AEBD /* Hero in Frameworks */,
 				CCD7196A2B21EECD0032A395 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +416,7 @@
 				CCD719692B21EECD0032A395 /* Alamofire */,
 				CC2984EA2B2A0F6F00A04BFE /* Realm */,
 				CC2984EC2B2A0F6F00A04BFE /* RealmSwift */,
+				CCE8E22F2B652F1B0013AEBD /* Hero */,
 			);
 			productName = WheatherApp;
 			productReference = CCD719512B21B77A0032A395 /* WheatherApp.app */;
@@ -447,6 +450,7 @@
 			packageReferences = (
 				CCD719682B21EECD0032A395 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CC2984E92B2A0F6F00A04BFE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				CCE8E22E2B652F1A0013AEBD /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = CCD719522B21B77A0032A395 /* Products */;
 			projectDirPath = "";
@@ -785,6 +789,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		CCE8E22E2B652F1A0013AEBD /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -802,6 +814,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CCD719682B21EECD0032A395 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		CCE8E22F2B652F1B0013AEBD /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE8E22E2B652F1A0013AEBD /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

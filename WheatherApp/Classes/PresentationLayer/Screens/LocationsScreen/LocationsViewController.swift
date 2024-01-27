@@ -78,6 +78,7 @@ extension LocationsViewController: UITableViewDelegate, UITableViewDataSource {
                                           sky: viewModel?.weatherData[indexPath.row].current.weather.first?.description ?? "",
                                           temp: viewModel?.weatherData[indexPath.row].current.temp ?? 0,
                                           minMax: viewModel?.getMinMax(tempArr: viewModel?.weatherData[indexPath.row].hourly ?? []) ?? "")
+                    currentCell.backgroundImage.heroID = "back\(indexPath.row)"
                     return currentCell
                 default:
                     currentCell.configure(locationName: viewModel?.weatherData[indexPath.row].timezone ?? "",
@@ -85,6 +86,7 @@ extension LocationsViewController: UITableViewDelegate, UITableViewDataSource {
                                           sky: viewModel?.weatherData[indexPath.row].current.weather.first?.description ?? "",
                                           temp: viewModel?.weatherData[indexPath.row].current.temp ?? 0,
                                           minMax: viewModel?.getMinMax(tempArr: viewModel?.weatherData[indexPath.row].hourly ?? []) ?? "")
+                    currentCell.backgroundImage.heroID = "back\(indexPath.row)"
                     return currentCell
             }
         }

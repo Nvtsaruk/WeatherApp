@@ -16,6 +16,7 @@ final class WeatherViewController: UIViewController {
     let skyLabel = UILabel()
     let tempSkyLabel = UILabel()
     let minMaxLabel = UILabel()
+    var heroSetId = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ final class WeatherViewController: UIViewController {
         bindViewModel()
         viewModel?.getData()
         setupUI()
+        backgroundImage.heroID = "back\(heroSetId)"
     }
     
     private func animateView() {
